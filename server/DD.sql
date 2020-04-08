@@ -1,0 +1,23 @@
+
+CREATE DATABASE `jb` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `jb`
+CREATE TABLE IF NOT EXISTS `jb_user` (
+  `tid` INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50)
+) ENGINE = InnoDB;
+
+
+CREATE TABLE IF NOT EXISTS `table_name` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255),
+  PRIMARY KEY `pk_id`(`id`)
+) ENGINE = InnoDB;
+
+INSERT INTO `jb_user` (`name`) VALUES
+("成亮");
+
+
+
+
+
+
